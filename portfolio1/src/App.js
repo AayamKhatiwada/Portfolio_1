@@ -1,21 +1,22 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./files/nabbar";
-import { Banner } from "./files/banner";
-import { Skills } from "./files/skills";
-import { Projects } from "./files/project";
-import { Contact } from "./files/contact";
-import { Footer } from "./files/footer";
+// import { Banner } from "./files/banner";
+// import { Skills } from "./files/skills";
+// import { Projects } from "./files/project";
+// import { Contact } from "./files/contact";
+// import { Footer } from "./files/footer";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
+      {/* <Banner />
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
+      <Footer /> */}
+
     </div>
   );
 }
