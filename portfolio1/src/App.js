@@ -1,5 +1,8 @@
+// importing css and bootstrap csss
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+// importing navbar banner skills projects contact and footer
 import { NavBar } from "./files/nabbar";
 import { Banner } from "./files/banner";
 import { Skills } from "./files/skills";
