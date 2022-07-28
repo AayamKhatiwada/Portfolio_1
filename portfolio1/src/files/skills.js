@@ -45,7 +45,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Ratio" />
-                                <h5>Game Developer</h5>
+                                <h5>Mobile App Developer</h5>
                             </div>
                         </Carousel>
                     </div>
