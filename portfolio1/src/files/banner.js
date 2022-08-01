@@ -21,7 +21,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
   // words that will be displayed on the screen
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Web Developer", "Web Designer", "Mobile App developer" ];
   const period = 2000;
 
   // useEffect to type or delete the current word
