@@ -21,7 +21,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
   // words that will be displayed on the screen
-  const toRotate = [ "Web Developer", "Web Designer", "Mobile App developer" ];
+  const toRotate = ["Web Developer", "Web Designer", "Mobile App developer"];
   const period = 2000;
 
   // useEffect to type or delete the current word
@@ -61,48 +61,49 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1); // chaning the word
       setDelta(500);
-    } 
+    }
   }
 
   return (
+    <>
+      {/* // body content of the portfolio */}
+      <section className="banner" id="home">
+        <Container>
 
-    // body content of the portfolio
-    <section className="banner" id="home">
-      <Container>
+          {/* setting the items in center and display in row format */}
+          <Row className="aligh-items-center">
 
-        {/* setting the items in center and display in row format */}
-        <Row className="aligh-items-center">
+            {/* setting the size of the left box */}
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                    <span className="tagline">Welcome to my Portfolio</span>
+                    <h1>{`Hi! It's me Aayam Khatiwada`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Mobile App developer" ]'><span className="wrap">{text}</span></span></h1>
+                    <p>An undergraduate, with a desire and dedication to learn new skills and improve it. Have a some
+                      understanding on programming languages and also have basic understanding on platform. Self learner with the a strong passion on new and creative working and want to get experience
+                      through mentorship.</p>
+                    <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
+                  </div>}
+              </TrackVisibility>
+            </Col>
 
-          {/* setting the size of the left box */}
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! It's me Aayam Khatiwada`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>An undergraduate, with a desire and dedication to learn new skills and improve it. Have a some
-                    understanding on programming languages and also have basic understanding on platform. Self learner with the a strong passion on new and creative working and want to get experience 
-                    through mentorship.</p>
-                  <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button> 
-              </div>}
-            </TrackVisibility>
-          </Col>
+            {/* setting the size of the right box */}
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) =>
 
-          {/* setting the size of the right box */}
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
+                  // animation of the header image
+                  <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
 
-                // animation of the header image
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-
-                  {/* header img displayed from assets */}
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+                    {/* header img displayed from assets */}
+                    <img src={headerImg} alt="Header Img" />
+                  </div>}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </>
   )
 }
