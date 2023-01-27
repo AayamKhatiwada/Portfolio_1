@@ -118,12 +118,6 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   opacity: 0.75;
 }
 
-/* while link is hovered or pressed */
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
-}
-
 /* styling for the text */
 span.navbar-text {
     display: flex;
